@@ -1,0 +1,22 @@
+Acme::Time::Asparagus
+
+We have a clock in our kitchen that has vegetables rather than numbers.
+You can see a picture of it at http://www.drbacchus.com/images/clock.jpg
+Pretty cool, huh?
+
+Sarah, our 4 year old, does not yet know how to tell time, and the other
+night I told her that she needed to be ready to go somewhere by
+asparagus. This got me thinking that it would be amusing to have a
+module for conversion from regular time to vegetable time. And, if I got
+particularly bored, the other direction.
+
+So what is this really good for? Um. It's in the Acme namespace. It's
+purely for my amusement.
+
+Note that there are also a wide variety of sushi clocks available -
+thanks to DrForr for this tip - which you can pick up at
+http://www.sushiclock.com/
+
+Rich 'DrBacchus' Bowen
+21 April, 2002, at about Tomato past Brussel Sprout.
+
