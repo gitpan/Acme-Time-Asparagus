@@ -4,7 +4,7 @@ use strict;
 BEGIN {
     use Exporter();
     use vars qw ($VERSION @ISA @EXPORT @times);
-    $VERSION = 1.01;
+    $VERSION = 1.02;
     @ISA     = qw (Exporter);
     @EXPORT  = qw ( veggietime );
 
@@ -28,6 +28,8 @@ Acme::Time::Asparagus - Time on the vegetable clock
 
 =head1 DESCRIPTION
 
+"And now it's time for silly songs with Larry."
+
 Figures out time on the vegetable clock. See
 http://www.DrBacchus.com/images/clock.jpg
 
@@ -42,8 +44,6 @@ It might be nice to have some error checking to trap bogus times.
 Make it easier to extend for use with other varieties of clocks.
 
 Some way to convert back to "real" time from vegetable notation.
-
-Find some way to work in some obscure Veggie Tales quotes.
 
 =head1 SUPPORT
 
@@ -69,6 +69,7 @@ LICENSE file included with this module.
 =head1 veggietime
 
     print veggietime('5:17');
+    print veggietime; # defaults to current time
 
 Returns the veggie time equivalent of a 12-hour time expressed in the
 format hh:mm. Will round to the nearest vegetable. Does no error
@@ -78,19 +79,28 @@ checking at this time.
 
 sub veggietime {
     my $time = shift;
-    my ($h, $m) = split /:/, $time;
+    my ($h, $m);
+
+    if ($time) {
+        ($h, $m) = split /:/, $time;
+    } else {
+        my @t = localtime;
+        $h=$t[2];
+        $m=$t[1];
+    }
 
     my $v = (int($m/5 + 0.5));
 
     if ($v == 0) {
         return $times[$h - 1];
+    } elsif ($v > 5) {
+        $h++;
+        $h=1 if $h==13;
+        return $times[$v - 1] . ' before ' . $times[$h - 1];
     } else {
         return $times[$v - 1] . ' past ' . $times[$h - 1];
     }
 }
 
-# Look. It's a water buffalo!
-
-1; 
-
+"Look. It's a cebu!";
 

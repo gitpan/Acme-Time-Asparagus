@@ -20,3 +20,10 @@ http://www.sushiclock.com/
 Rich 'DrBacchus' Bowen
 21 April, 2002, at about Tomato past Brussel Sprout.
 
+---------------------
+
+Version 1.02 adds 'before' as well as 'after', so that one has 'Onion
+before Brussel Sprout', rather than 'Onion after Corn'. And now you can
+just call veggietime() and have it default to the current time. Thanks
+to sockmonk and phydeaux for appropriate VeggieTales quotes.
+
