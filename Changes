@@ -9,3 +9,8 @@ Revision history for Perl extension Acme::Time::Asparagus.
 
 1.03  Bug fix - hours > 12 not supported, so the "default to now"
       functionality not working after 1pm.
+
+1.04  Patch from Kate L Pugh, London.pm, to make the clock speak British
+      English. Additionally, there were some changes to make it more
+      forgiving of time formats.
+

@@ -5,4 +5,5 @@ README
 lib/Acme/Time/Asparagus.pm
 t/01_ini.t
 t/02_times.t
+t/03_langs.t
 MANIFEST

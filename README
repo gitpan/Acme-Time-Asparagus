@@ -27,3 +27,10 @@ before Brussel Sprout', rather than 'Onion after Corn'. And now you can
 just call veggietime() and have it default to the current time. Thanks
 to sockmonk and phydeaux for appropriate VeggieTales quotes.
 
+---------------------
+
+Version 1.04 is the result of a patch from Kate Pugh, of London.pm,
+demonstrating that there are other people in the world that are just as
+silly as me. So there. Now this module speaks British English as well as
+American English. You say tomato, I say tomato.
+
