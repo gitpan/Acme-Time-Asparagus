@@ -4,7 +4,7 @@ use strict;
 BEGIN {
     use Exporter();
     use vars qw ($VERSION @ISA @EXPORT @times);
-    $VERSION = 1.02;
+    $VERSION = 1.03;
     @ISA     = qw (Exporter);
     @EXPORT  = qw ( veggietime );
 
@@ -47,7 +47,7 @@ Some way to convert back to "real" time from vegetable notation.
 
 =head1 SUPPORT
 
-You're kidding, right?
+You're kidding, right? Stop being so silly!
 
 =head1 AUTHOR
 
@@ -89,15 +89,18 @@ sub veggietime {
         $m=$t[1];
     }
 
+    # o/~ We are the pirates who don't do anything o/~
+    $h-=12 if $h>12;
+
     my $v = (int($m/5 + 0.5));
 
     if ($v == 0) {
         return $times[$h - 1];
-    } elsif ($v > 5) {
+    } elsif ($v > 6) { # Won't you join me in my irritating little song?
         $h++;
         $h=1 if $h==13;
         return $times[$v - 1] . ' before ' . $times[$h - 1];
-    } else {
+    } else { # It would be an honor!
         return $times[$v - 1] . ' past ' . $times[$h - 1];
     }
 }

@@ -7,3 +7,5 @@ Revision history for Perl extension Acme::Time::Asparagus.
     - Added support for defaulting to 'now' if no time is specified
     - Added correct 'before' and 'after' phrasing for times.
 
+1.03  Bug fix - hours > 12 not supported, so the "default to now"
+      functionality not working after 1pm.
