@@ -18,7 +18,17 @@ thanks to DrForr for this tip - which you can pick up at
 http://www.sushiclock.com/
 
 Rich 'DrBacchus' Bowen
-21 April, 2002, at about Tomato past Brussel Sprout.
+21 April, 2002, at about Tomato past Brussels Sprout.
+
+  use Acme::Time::Asparagus;
+  print veggietime("2:53");
+
+Displays "Red Pepper before Carrot"
+
+This package also contains Acme::Time::Aubergine (vegatable clock in
+British English) and Acme::Time::DimSum (a dim sum clock), and
+Acme::Time::FooClock, which lets you create your own clock module by
+providing a list of objects appearing on the clock.
 
 ---------------------
 
@@ -33,4 +43,13 @@ Version 1.04 is the result of a patch from Kate Pugh, of London.pm,
 demonstrating that there are other people in the world that are just as
 silly as me. So there. Now this module speaks British English as well as
 American English. You say tomato, I say tomato.
+
+---------------------
+
+Version 1.10 is a major rearrangement. The desire was to be able to
+create clock modules for any arbitrary clock without working very hard
+at it. Seems like a lot of trouble to go to, but there you have it. So,
+we have a new Acme::Time::FooClock which provides the guts, and then
+various other modules which implement a particular clock. Please make
+your own clocks, and further pollute the world with silly code.
 

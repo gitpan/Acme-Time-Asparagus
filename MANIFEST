@@ -2,8 +2,14 @@ LICENSE
 Changes
 Makefile.PL
 README
+MANIFEST
+
 lib/Acme/Time/Asparagus.pm
+lib/Acme/Time/Aubergine.pm
+lib/Acme/Time/DimSum.pm
+lib/Acme/Time/FooClock.pm
+
 t/01_ini.t
 t/02_times.t
-t/03_langs.t
-MANIFEST
+t/03_aubergine.t
+t/04_dimsum.t
