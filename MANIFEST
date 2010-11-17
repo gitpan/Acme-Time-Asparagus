@@ -7,9 +7,12 @@ MANIFEST
 lib/Acme/Time/Asparagus.pm
 lib/Acme/Time/Aubergine.pm
 lib/Acme/Time/DimSum.pm
+lib/Acme/Time/Donut.pm
 lib/Acme/Time/FooClock.pm
 
 t/01_ini.t
 t/02_times.t
 t/03_aubergine.t
 t/04_dimsum.t
+t/05_donut.t
+META.yml                                 Module meta-data (added by MakeMaker)

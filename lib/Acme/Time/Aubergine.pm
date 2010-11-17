@@ -3,9 +3,9 @@ use strict;
 
 BEGIN {
     use Exporter();
-    use vars qw ($VERSION @ISA @EXPORT @EXPORT $times );
+    use vars qw ($VERSION @ISA @EXPORT $times );
     use Acme::Time::FooClock;
-    $VERSION   = qw($Revision: 1.11 $)[1];
+    $VERSION   = 1.12;
     @ISA       = qw (Exporter);
     @EXPORT = qw ( veggietime );
 

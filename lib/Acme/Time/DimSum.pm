@@ -5,7 +5,7 @@ BEGIN {
     use Exporter();
     use vars qw ($VERSION @ISA @EXPORT @EXPORT $times );
     use Acme::Time::FooClock;
-    $VERSION   = qw($Revision: 1.10 $)[1];
+    $VERSION   = 1.12;
     @ISA       = qw (Exporter);
     @EXPORT = qw ( sushitime );
 

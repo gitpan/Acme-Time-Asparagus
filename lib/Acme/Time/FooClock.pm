@@ -56,14 +56,13 @@ You're kidding, right? Stop being so silly!
 	CPAN ID: RBOW
 	rich@DrBacchus.com
     http://www.DrBacchus.com/
-	http://www.CooperMcGregor.com/
 
 Kudos to Kate L Pugh for submitting a patch, and demonstrating that
 there are other people in the world as silly as I am.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2002 Rich Bowen. All rights reserved.
+Copyright (c) 2009 Rich Bowen. All rights reserved.
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
