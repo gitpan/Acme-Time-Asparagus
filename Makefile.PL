@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     NAME         => 'Acme::Time::Asparagus',
-    VERSION_FROM => 'lib/Acme/Time/Asparagus.pm', # finds $VERSION
+    VERSION_FROM => 'VERSION',
     AUTHOR       => 'Rich Bowen (rich@DrBacchus.com)',
     ABSTRACT     => 'Time on the vegetable clock',
     PREREQ_PM    => {

@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Acme-Time-Asparagus
-version:            1.12
+version:            1.13
 abstract:           Time on the vegetable clock
 author:
     - Rich Bowen (rich@DrBacchus.com)

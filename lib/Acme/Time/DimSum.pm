@@ -3,9 +3,8 @@ use strict;
 
 BEGIN {
     use Exporter();
-    use vars qw ($VERSION @ISA @EXPORT @EXPORT $times );
+    use vars qw (@ISA @EXPORT $times );
     use Acme::Time::FooClock;
-    $VERSION   = 1.12;
     @ISA       = qw (Exporter);
     @EXPORT = qw ( sushitime );
 
@@ -19,11 +18,26 @@ BEGIN {
     ];
 }
 
+=head1 NAME
+
+Acme::Time::DimSum - DimSum Time!
+
+=head1 SYNOPSIS
+
+    use Acme::Time::DimSum;
+    print sushitime("5:38");
+
+See Acme::Time::Asparagus and Acme::Time::FooClock for more details.
+
+Buy your dimsum clock at http://www.sushiclock.com/dimsum.html
+
+=cut
+
 # sub sushitime {{{
 
 sub sushitime {
     return Acme::Time::FooClock::time(shift);
 }    # }}}
 
-1;
+'domo arigato';
 

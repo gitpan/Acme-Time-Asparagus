@@ -2,8 +2,6 @@ package Acme::Time::FooClock;
 use strict;
 
 BEGIN {
-    use vars qw ($VERSION );
-    $VERSION = qw($Revision: 1.10 $)[1];
 }
 
 # Documentation {{{
@@ -22,14 +20,17 @@ Used for making arbitrary picture-clock classes.
         'Green Onion', 'Pumpkin',        'Asparagus',  'Onion',
         'Corn',        'Brussels Sprout', 'Red Pepper', 'Cabbage',
     ];
- return Acme::Time::FooClock::time($time);
+
+ sub footime() {
+     return Acme::Time::FooClock::time(shift);
+ }
 
 =head1 DESCRIPTION
 
 "And now it's time for silly songs with Larry."
 
 Figures out time on the vegetable clock. See
-http://www.DrBacchus.com/images/clock.jpg
+http://DrBacchus.com/images/clock.jpg
 
 =head1 BUGS/ToDo
 
@@ -54,7 +55,7 @@ You're kidding, right? Stop being so silly!
 
 	Rich 'DrBacchus' Bowen
 	CPAN ID: RBOW
-	rich@DrBacchus.com
+	rbowen@rcbowen.com
     http://www.DrBacchus.com/
 
 Kudos to Kate L Pugh for submitting a patch, and demonstrating that
@@ -62,7 +63,7 @@ there are other people in the world as silly as I am.
 
 =head1 COPYRIGHT
 
-Copyright (c) 2009 Rich Bowen. All rights reserved.
+Copyright (c) 2010 Rich Bowen. All rights reserved.
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
 
@@ -71,9 +72,8 @@ LICENSE file included with this module.
 
 =head1 veggietime
 
-    print veggietime('5:17', 'en_GB');
-    print veggietime('5:17'); # defaults to US English
-    print veggietime; # defaults to current time and US English
+    print veggietime('5:17'); 
+    print veggietime; # defaults to current time 
 
 Returns the veggie time equivalent of a 12-hour time expressed in the
 format hh:mm. Will round to the nearest vegetable.
