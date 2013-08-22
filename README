@@ -53,3 +53,15 @@ we have a new Acme::Time::FooClock which provides the guts, and then
 various other modules which implement a particular clock. Please make
 your own clocks, and further pollute the world with silly code.
 
+----------------------
+
+Version 1.16 fixes the broken 1.15 release, which claimed to provide a
+veggietime command line script, but didn't, and so broke stuff. Also,
+1.15 seems to have never made it into revision control, which is odd. So
+if such a script ever existed, I don't know where it went. Not that it
+would be difficult to make a new one ...
+
+----------------------
+
+Version 1.17 ads the veggietime script for reals.
+
