@@ -9,8 +9,4 @@ WriteMakefile(
     PREREQ_PM    => {
         'Test::More' => 0,
     },
-
-    EXE_FILES => [
-        qw(bin/veggietime)
-    ],
 );
